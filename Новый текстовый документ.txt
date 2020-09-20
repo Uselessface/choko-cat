@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>ChokoCat</title>
+</head>
+<body>
+	<section class="top-nav">
+		<div class="wrapper">
+			<div class="logo">
+				<img src="assets/img/logo.png" alt="logo">
+			</div>
+			<nav class="header-menu">
+				<li>
+					<ul class="burger-menu">
+						
+					</ul>
+				</li>
+				<li><a href="">О нас</a></li>
+				<li><a href="">Корпоративным клиентам</a></li>
+				<li><a href=""><img src="assets/img/prodArt.png"></a></li>
+				<li><a href="">Как заказать</a></li>
+				<li><a href="">Доставка и оплата</a></li>
+				<li><a href="">Новости</a></li>
+				<li><a href="">Контакты</a></li>
+			</nav>
+			<form action="">
+				<input  name="search" autofocus class="top-search">
+			</form>
+			<div class="geo">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="langugage"></div>	
+			<div class="user-login">
+				<a href=""></a>
+			</div>
+			<div class="shop-cart">
+				<a href=""></a>
+			</div>
+		</div>
+	</section>
+	<section class="slider-banner">
+		<div class="wrapper">
+			<div class="text-container">
+				<h1><span></span></h1>
+				<p></p>
+				<a href="" class="button"></a>
+			</div>
+			<div class="image-container"></div>
+		</div>
+	</section>
+	<section class="new-catalog">
+		<div class="wrapper">
+			<h2></h2>
+				<ul class="new-items">
+					<li class="new-item">
+						<div class="item-img">
+							<img src="" alt="">
+						</div>
+						<div class="item-buy">
+							<p class="item-price"></p>
+							<span class="item-description"></span>
+							<a href="" class="button item-btn"></a>
+						</div>
+					</li>
+				</ul>
+		</div>
+	</section>
+	<section class="regular-banner">
+		<div class="wrapper">
+			<div class="banner">
+				<img src="" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="recomended-catalog">
+		<div class="wrapper">
+			<h2></h2>
+				<ul class="new-items recomended">
+					<li class="new-item">
+						<div class="item-img">
+							<img src="" alt="">
+						</div>
+						<div class="item-buy">
+							<p class="item-price"></p>
+							<span class="item-description"></span>
+							<a href="" class="button item-btn"></a>
+						</div>
+					</li>
+				</ul>
+		</div>
+	</section>
+	<section class="regular-banner">
+		<div class="wrapper">
+			<div class="banner">
+				<img src="" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="rev">
+		<div class="wrapper">
+			<div class="rev-item">
+				<div class="rev-icon"></div>
+				<div class="rev-text"></div>
+			</div>
+		</div>
+	</section>
+	<section class="news">
+		<div class="wrapper">
+			<h3></h3>
+			<ul class="news">
+				<li>
+					<div class="news-img">
+						<div class="img"></div>
+					</div>
+					<div class="news-text">
+						<h6></h6>
+						<p></p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!--<section class="bottom">
+		<div class="wrapper">
+			<div class="logo"></div>
+			<nav class="header-menu">
+				<li><a href="">О нас</a></li>
+				<li><a href="">Корпоративным клиентам</a></li>
+				<li><a href=""><img src=""></a></li>
+				<li><a href="">Как заказать</a></li>
+				<li><a href="">Доставка и оплата</a></li>
+				<li><a href="">Новости</a></li>
+				<li><a href="">Вакансии</a></li>
+				<li><a href="">Мы в СМИ</a></li>
+			</nav>
+			<ul class="social">
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</div>
+	</section> -->
+	<footer>
+		<div class="wrapper">
+			<span></span>
+		</div>
+	</footer>
+</body>
+</html>
