@@ -1,0 +1,570 @@
+/*---------------------------------------ОСНОВНЫЕ СТИЛИ-----------------------------*/
+@font-face {
+	font-family: 'LifehackBasic';
+	src: url('assets/fonts/LifehackBasic.eot');
+	src: local('☺'), url('assets/fonts/LifehackBasic.woff') format('woff'), url('assets/fonts/LifehackBasic.ttf') format('truetype'), url('assets/fonts/LifehackBasic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'LifehackSans';
+	src: url('assets/fonts/LifehackSans.eot');
+	src: local('☺'), url('assets/fonts/LifehackSans.woff') format('woff'), url('assets/fonts/LifehackSans.ttf') format('truetype'), url('assets/fonts/LifehackSans.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SegoeUI';
+	src: url('assets/fonts/SegoeUI.eot');
+	src: local('☺'), url('assets/fonts/SegoeUI.woff') format('woff'), url('assets/fonts/SegoeUI.ttf') format('truetype'), url('assets/fonts/SegoeUI.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+scroll-behavior: smooth;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clearfix:after{
+	content: ' ';
+	display: block;
+	clear: both;
+}
+.red{
+	color: #ff0000;
+}
+body{
+	font-family: 'SegoeUI' , Open Sans, sans-serif;
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto
+}
+section, footer, header{
+	max-width: 2512px;
+	margin: 0 auto;
+}
+header{
+	border-bottom: 1px solid #f1f1f1;
+}
+.wrapper{
+	padding: 0 5px;
+	max-width: 2336px;
+	margin: 0 auto;
+
+}
+/*-------------------------------------------------------*/
+
+/*------------------------------------ВЕРХНЕЕ МЕНЮ---------*/
+.top-nav .wrapper {
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+}
+.top-menu{
+	margin: 40px 0 0;
+	display: flex;
+	-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+.header-menu > li{
+	display: inline-block;
+	margin: 0 0 0 40px;
+}
+.header-menu > li > a{
+	font-size: 24px;
+	line-height: 48px;
+	text-decoration: none;
+	color: #7b8f9b;	
+}
+.header-menu > li > a > img{
+	position: relative;
+	top: 10px;
+}
+.header-menu > li > a:hover{
+	color: #756b72;
+	font-weight: 900;
+}
+.top-menu form {
+	margin: 10px 35px 0;
+}
+.top-search {
+	width: 390px;
+	height: 59px;
+	border: 1px solid #7b8f9b;
+	border-radius: 40px;
+	background: url(assets/img/search-bg.png) 330px 15px no-repeat;
+	padding: 15px 50px;
+}
+.top-search:focus{
+	background: none;
+}
+.geo  i {
+	display: inline-block;
+	background: url(assets/img/geo.png) top center no-repeat;
+	width: 20px;
+	height: 25px;
+}
+.geo span{
+	text-align: center;
+	display: inline-block;
+	margin: 0 15px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #7b8f9b;
+}
+.user-login, .shop-cart {
+	width: 35px;
+	height: 35px;
+}
+.user-login{
+	margin: 0 25px 0 80px;
+}
+.language{
+	background: #fff;
+	width: 45px;
+	height: 32px;
+	border: 1px solid #7b8f9b;
+	border-radius: 10px;
+	font-size: 16px;
+	color: #7b8f9b;
+	font-weight: 700;
+}
+/*--------------------------БОКОВАЯ КНОПКА----------------*/
+.side-button{
+	-webkit-box-shadow:2px 5px 20px 2px #7b8f9b;
+	-moz-box-shadow:2px 5px 20px 2px #7b8f9b;
+	box-shadow:2px 5px 20px 2px #7b8f9b;
+	position: fixed;
+	top: 600px;
+	padding-top: 5px;
+	margin-left: -205px;
+	font-size: 25px;
+	line-height: 45px;
+	color: #ffffff;
+	font-weight: bold;
+	width: 280px;
+	height: 60px;
+	transform: rotate(-90deg);
+	text-transform: uppercase;
+	background:#e81020;
+	text-align: center;
+	z-index: 999;
+	overflow: auto;
+	cursor: pointer;
+	border-radius: 0 0 15px 15px;
+	box-shadow:(16px 16px 10px black);
+	background: #f83730;
+	background-image: radial-gradient(rgb(209, 7, 7), rgb(207, 7, 7), rgb(205, 6, 6), rgb(203, 6, 6), rgb(201, 5, 5), rgb(199, 5, 5), rgb(196, 4, 4), rgb(194, 4, 4), rgb(192, 3, 3), rgb(190, 3, 3), rgb(188, 2, 2), rgb(186, 2, 2));
+	background-image: radial-gradient(rgb(209, 7, 7), rgb(207, 7, 7), rgb(205, 6, 6), rgb(203, 6, 6), rgb(201, 5, 5), rgb(199, 5, 5), rgb(196, 4, 4), rgb(194, 4, 4), rgb(192, 3, 3), rgb(190, 3, 3), rgb(188, 2, 2), rgb(186, 2, 2));
+}
+/*------------------------------СЛАЙДЕР С АКЦИЯМИ ----------------- */
+.slider-banner {
+	background: #f3f0f6;
+}
+.slider-banner > .wrapper {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	height: 100%;
+}
+.sale-title{
+	font: 120px "Lifehack Sans";
+}
+.text-container{
+	padding: 125px 0;
+	font-size: 25px;
+	line-height: 36px;
+	max-width: 1140px;
+}
+.button{
+	display: inline-block;
+	width: 196px;
+	height: 48px;
+	border: 1px solid #7b8f9b;
+	border-radius: 20px;
+	font-size: 15px;
+	text-align: center;
+	line-height: 45px;
+	color: #010101;
+	text-transform: uppercase;
+	font-weight: 900;
+	text-decoration: none;
+	margin: 25px 0 0 0;
+}
+.image-container{
+	margin: 50px 0 0 0;
+	max-width: 970px;
+}
+/*------------------------------------------------------*/
+/*---------------- СПИСОК ТОВАРОВ ----------------------*/
+.new-item{
+	padding: 30px 10px 10px;
+	overflow: hidden;
+	height: 545px;
+	max-width: 360px;
+	float: left;
+	margin: 0 25px 10px 0; 	
+}
+.new-item:hover{
+	cursor: pointer;
+	transition: 0.6 ease;
+	border: 1px solid #f1f1f1;
+	border-radius: 30px;
+	-webkit-box-shadow:0px 0px 18px 1px #e5e5e5 ;
+	-moz-box-shadow:0px 0px 18px 1px #e5e5e5 ;
+	box-shadow:0px 0px 18px 1px #e5e5e5 ;
+}
+.new-header {
+	margin: 30px 0 65px;
+	display: inline-block;
+	font-size: 46px;
+	color: #000000;
+}
+.item-img>img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.item-buy{
+	padding-top: 50px;
+}
+.item-price{
+	font-weight: 900;
+	line-height:  38px;
+	font-size: 35px;
+	color: #000000;
+}
+.breadcrums {
+	white-space: nowrap;
+  	padding: 10px 0 10px;
+  	overflow: hidden;
+}
+.breadcrums li {
+  display: inline-block;
+  font-size: 18px;
+}
+.breadcrums li+li:before {
+  padding: 4px;
+  color: #808c97;
+  content: "/\00a0";
+}
+.breadcrums li a {
+	color: #808c97;
+    text-decoration: none;
+}
+.breadcrums li a:hover {
+  text-decoration: underline;
+}
+.item-buy .button{
+	display: none;
+}
+
+/*---------------------------------------------------------*/
+.banner{
+	margin: 30px 0;
+	overflow: hidden;
+	border-radius: 30px;
+	width: 100%;
+	max-height: 330px;
+}
+/*------ ОТЗЫВЫ -----------*/
+.rev-item{
+	display: inline-flex;
+	align-content: center;
+	justify-content: space-between;
+	max-width: 750px;
+	margin-right: 30px;
+
+}
+.rev-icon{
+	display: inline-block;
+	padding: 0 30px;
+	height: 165px;
+	width: 165px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.rev-container{
+	max-width: 525px;
+	display: inline-block;
+	font-size: 25px;
+	line-height: 36px;
+	color: #7c7c7c;
+	font-style: italic;
+	font-weight: 400;
+}
+.rev-text{
+	margin-bottom: 40px;
+}
+/*---------------------------------------*/
+
+/*---------------НОВОСТИ------------------*/
+.news{
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+}
+.news > li {
+	margin-right: 50px;
+}
+.news-img{
+	height: 340px;
+	border-radius: 25px;
+	overflow: hidden;
+}
+.news-img > img{
+	height: 100%;
+}
+.news-text .new-header{
+	font-size: 37px;
+	margin: 20px;
+}
+.news-text p{
+	max-height: 110px;
+	font-size: 25px;
+	line-height: 36px;
+	color: #808e99;
+}
+/*---------------------------------------------*/
+.bottom .wrapper {
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	margin: 60px auto 20px;
+}
+.bottom .header-menu{
+	margin-left: 200px;
+}
+.bottom .header-menu > li{
+	display: inline-block;
+  	width: 20%;
+  	margin: 0 60px 0 0;
+}
+/*--------------------------СОЦСЕТИ------------------*/
+.social{
+	margin: 0 30px 0 0;
+}
+.social li{
+	display: inline-block;
+	margin: 0 30px 0 0;
+}
+.social li > a{
+	width: 33px;
+	height: 33px;
+	display: inline-block;
+}
+.bg-whatsup {
+    width: 33px; height: 33px;
+    background: url('assets/img/css_sprites.png') -58px -0;
+}
+.bg-youtube {
+    width: 33px; height: 24px;
+    background: url('assets/img/css_sprites.png') -91px -0;
+}
+.bg-inst {
+    width: 31px; height: 31px;
+    background: url('assets/img/css_sprites.png') -27px -0;
+}
+.bg-vk {
+    width: 38px; height: 22px;
+    background: url('assets/img/css_sprites.png') -124px -0;
+}
+.bg-viber {
+    width: 27px; height: 29px;
+    background: url('assets/img/css_sprites.png') -0 -0;
+}
+/*---------------------------------------------------------*/
+/*-----------------------------------------------ФУТЕР---------------*/
+footer .wrapper{
+	padding: 20px 0;
+	background: #f0eef4;
+	height: 60px;
+	padding: 
+}
+.copyright{
+	font-size: 20px;
+	color: #808c97;
+	font-family: 'LifehackBasic';
+}
+.copyright span{
+	font-family: 'SegoeUI';
+	font-weight: 300;
+}
+.contacts{
+	margin-left: 25%;
+}
+.contacts a{
+	color: #808e99;
+	text-decoration: none;
+}
+.contacts li{
+	display: inline-block;
+	font-size: 20px;
+	color: #808e99;
+	font-weight: 300;
+}
+.contacts li:nth-child(even){
+	margin: 0 60px;
+}
+
+/*------------------------------------------------------*/
+
+/*-------------------------КАТАЛОГ-----------------*/
+.breadcrumbs .wrapper{
+	margin: 30px auto;
+}
+.sale-templates .wrapper{
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+}
+.template{
+	overflow: hidden;
+	padding-top: 100px;
+	width: 740px;
+	height: 345px;
+	background: #808792;
+	border-radius: 40px;
+	text-align: center;
+	font-size: 120px;
+	color: #fffefe;
+	font-family: "Lifehack Sans";
+}
+/*----------------------------------------------------------*/
+
+/*----------------------КАРТОЧКА ТОВАРА-------------------------*/
+
+.unit{
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: flex-start;
+	height: 100%;
+}
+.unit-article{
+	font-size: 28px;
+	line-height: 57px;
+	color: #808c97;
+	border-radius: 20px;
+	border: 1px solid #7b8f9b;
+	padding: 0 30px;
+	display: inline-block;
+}
+.unit-prev{
+	margin: 30px;
+	width: 915px;
+	height: 725px;
+	border: 1px solid #f1f1f1;
+	overflow: hidden;
+}
+.unit-info > .breadcrums {
+	white-space: nowrap;
+  	padding: 10px 0 10px;
+  	overflow: hidden;
+
+}
+.unit-info > .breadcrums li {
+  	display: inline-block;
+	font-size: 42px;
+}
+.unit-info > .breadcrums li+li:before {
+	  padding: 4px;
+	  color: #000000;
+	  content: "/\00a0";
+}
+.unit-info > .breadcrums li a {
+	color: #000000; 	
+    text-decoration: none;
+}
+.unit-info > .breadcrums li a:hover {
+  	text-decoration: underline;
+}
+.unit-button{
+	padding: 10px 30px;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #000000;
+	text-decoration: none;
+	background: #f0eef4;
+	border-radius: 15px;
+	margin: 20px 0;
+	display: inline-block;
+}
+.description{
+	min-width: 1300px;
+	margin: 30px 0 20px 0;
+	padding: 15px 5px 35px; 
+	font-size: 28px;
+	line-height: 36px;
+	border-top: 1px solid #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+}
+.parameters {
+	font-size: 26px;
+	color: #000000;
+}
+.parameters > span:nth-child(1) {
+	text-transform: uppercase;
+	padding: 10px;
+	margin: 0 30px 5px 0;
+	display: inline-block;
+	background: #f0eef4;
+	width: 23%;
+}
+.parameters > span:nth-child(2) {
+	max-width: 73%;
+	display: inline-block;
+	vertical-align: text-top;
+}
+.unit-quantity > div{
+	display: inline-block;
+}
+.unit-quantity p{
+	font-size: 26px;
+	text-transform: uppercase;
+}
+.unit-quantity{
+	margin: 30px 0 0 0;
+	padding: 20px 5px 30px;
+	border-top: 1px solid #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+	font-size: 44px;
+}
+.quantity{
+	width: 260px;
+	margin: 15px 100px 0 0;
+}
+.quantity > div{
+	width: 25%;
+	background: #ff0018;
+	cursor: pointer;
+	color: #ffffff;
+	text-align: center;
+	float: left;
+}
+.quantity > div:nth-child(1){
+	border-radius: 10px 0 0 10px;
+}
+.quantity > div:nth-child(3){
+	border-radius: 0 10px 10px 0;
+}
+.quantity > span{
+	float: left;
+	width: 50%;
+	background:  #f0eef4;
+	text-align: center;
+}
+.sum div{
+	margin: 25px 0 0 0;
+}
+
