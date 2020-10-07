@@ -52,7 +52,7 @@ header{
 	border-bottom: 1px solid #f1f1f1;
 }
 .wrapper{
-	padding: 0 5px;
+	padding: 0 10px;
 	max-width: 2336px;
 	margin: 0 auto;
 
@@ -98,6 +98,9 @@ header{
 	margin: 10px 35px 0;
 }
 .top-search {
+	font-size: 24px;
+	color: #000000;
+	font-weight: 700;
 	width: 390px;
 	height: 59px;
 	border: 1px solid #7b8f9b;
@@ -130,12 +133,10 @@ header{
 	margin: 0 25px 0 80px;
 }
 .language{
-	background: #fff;
-	width: 45px;
-	height: 32px;
+	font-size: 16px;
+	padding: 10px;
 	border: 1px solid #7b8f9b;
 	border-radius: 10px;
-	font-size: 16px;
 	color: #7b8f9b;
 	font-weight: 700;
 }
@@ -146,14 +147,12 @@ header{
 	box-shadow:2px 5px 20px 2px #7b8f9b;
 	position: fixed;
 	top: 600px;
-	padding-top: 5px;
+	padding: 5px 30px;
 	margin-left: -205px;
 	font-size: 25px;
 	line-height: 45px;
 	color: #ffffff;
 	font-weight: bold;
-	width: 280px;
-	height: 60px;
 	transform: rotate(-90deg);
 	text-transform: uppercase;
 	background:#e81020;
@@ -188,10 +187,10 @@ header{
 }
 .button{
 	display: inline-block;
-	width: 196px;
-	height: 48px;
 	border: 1px solid #7b8f9b;
-	border-radius: 20px;
+	border-radius: 15px;
+	padding: 0 23px;
+	background: #ffffff;
 	font-size: 15px;
 	text-align: center;
 	line-height: 45px;
@@ -204,13 +203,14 @@ header{
 .image-container{
 	margin: 50px 0 0 0;
 	max-width: 970px;
+	display: inline-block;
 }
 /*------------------------------------------------------*/
 /*---------------- СПИСОК ТОВАРОВ ----------------------*/
 .new-item{
 	padding: 30px 10px 10px;
 	overflow: hidden;
-	height: 545px;
+	height: 520px;
 	max-width: 360px;
 	float: left;
 	margin: 0 25px 10px 0; 	
@@ -234,6 +234,24 @@ header{
 	display: block;
 	width: 100%;
 	height: 100%;
+}
+.in-cart{
+	position: absolute;
+	margin: -140px 0 0 70px;
+	font-size: 18px;
+	line-height: 41px;
+	color: #4f4f4f;
+	font-weight: bold;
+	background: #eeedf1;
+	border-radius: 30px;
+	opacity: 0.9;
+	padding: 0 25px;
+	display: none;
+	z-index: 888;
+	text-decoration: none;
+}
+.item-img:hover > .in-cart{
+	display: inline-block;
 }
 .item-buy{
 	padding-top: 50px;
@@ -265,10 +283,23 @@ header{
 .breadcrums li a:hover {
   text-decoration: underline;
 }
-.item-buy .button{
+.item-btn{
+	margin: 30px 25% 0;
+	padding: 0 35px;
 	display: none;
+	text-decoration: none;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 48px;
+	color: #fefefe;
+	font-weight: bold;
+	background: #ff0018;
+	border-radius: 10px;
 }
-
+.new-item:hover .item-btn{
+	display: inline-block;
+}
 /*---------------------------------------------------------*/
 .banner{
 	margin: 30px 0;
@@ -477,7 +508,7 @@ footer .wrapper{
   	display: inline-block;
 	font-size: 42px;
 }
-.unit-info > .breadcrums li+li:before {
+.unit-info > .breadcrums li:before {
 	  padding: 4px;
 	  color: #000000;
 	  content: "/\00a0";
@@ -568,3 +599,150 @@ footer .wrapper{
 	margin: 25px 0 0 0;
 }
 
+.unit-info .item-btn{
+	display: inline-block;
+	margin: 20px 0 0 0;
+	padding: 0 50px;
+	font-size: 30px;
+	line-height: 57px;
+	border-radius: 25px;
+}
+
+/*----------------------МЕДИА ЗАПРОСЫ--------------------*/
+
+@media screen and (max-width: 1600px) {
+	section, footer, header{
+	max-width: 1400px;
+	margin: 0 auto;
+	}
+.wrapper{
+	padding: 0 30px;
+	max-width: 1380px;
+	margin: 0 auto;
+	}
+  /*---------------ВЕРХ----------------*/	
+.top-nav .wrapper{
+	padding-top: 10px;
+	margin-bottom: 15px;
+}
+.header-menu > li > a{
+	font-size: 11px;
+	line-height: 15px;	
+	}	
+.logo img{
+	height: 70px;
+	}	
+.top-menu{
+	margin: 10px 0 0;
+	}	
+.header-menu > li{
+	margin: 0 0 0 10px;
+	}	
+.header-menu > li > a > img{
+	width: 76px;
+	position: relative;
+	top: 7px;
+	}	
+.top-search {
+	font-size: 18px;
+	width: 210px;
+	height: 30px;
+	background: url(assets/img/search-bg.png) 180px  no-repeat;
+	background-size: 13px;
+	margin: 0;
+	}
+.geo  i {
+	display: inline-block;
+	background: url(assets/img/geo.png) top center no-repeat;
+	width: 20px;
+	height: 25px;
+	}
+.geo span{
+	text-align: center;
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 12px;
+	font-weight: 700;
+	color: #7b8f9b;
+	}	
+.language{
+	font-size: 10px;
+	}	
+/*----------------БАННЕР------------------*/
+.sale-title{
+	font: 70px "Lifehack Sans";
+	}
+.text-container{
+	padding: 55px 0;
+	font-size: 15px;
+	line-height: 36px;
+	max-width:50%;
+	}
+.button{
+	border-radius: 15px;
+	padding: 0 23px;
+	font-size: 15px;
+	line-height: 30px;
+	margin: 25px 0 0 0;
+	}	
+.image-container{
+	margin: 20px 0 0 0;
+	max-width:40%;
+	display: inline-block;
+	}
+/*----------------------------------------*/
+/*------------------БОКОВАЯ КНОПКА---------*/	
+.side-button{
+	-webkit-box-shadow:2px 5px 20px 2px #7b8f9b;
+	-moz-box-shadow:2px 5px 20px 2px #7b8f9b;
+	box-shadow:2px 5px 20px 2px #7b8f9b;
+	top: 300px;
+	padding: 0 30px;
+	margin-left: -115px;
+	font-size: 15px;
+	line-height: 30px;
+	border-radius: 0 0 15px 15px;
+	box-shadow:(16px 16px 10px black);
+	}
+/*--------------------------------------------*/
+/*---------------- СПИСОК ТОВАРОВ ----------------------*/
+.new-item{
+	padding: 10px 10px 0 5px;
+	height: 260px;
+	max-width: 195px;
+	margin: 0 15px 5px 0; 	
+	border-radius: 1px;
+	}
+.new-header {
+	margin: 15px 0 30px;
+	font-size: 36px;
+	}
+.in-cart{
+	position: absolute;
+	margin: -70px 0 10px 20px;
+	font-size: 10px;
+	line-height: 25px;
+	padding: 0 25px;
+	}
+.item-buy{
+	padding-top: 10px;
+	}
+.item-price{
+	line-height: 22px;
+	font-size: 20px;
+	}
+.breadcrums li {
+  font-size: 9px;
+	}
+.breadcrums li+li:before {
+  padding: 1px;
+	}
+.item-btn{
+	margin: 0 25% 0;
+	padding: 0 20px;
+	font-size: 8px;
+	line-height: 20px;
+	}
+/*---------------------------------------------------------*/
+
+}
