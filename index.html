@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://use.fontawesome.com/241b2a9dda.js"></script>
 	<title>ChokoCat</title>
+
 </head>
 <body>
 	<header class="top-nav">
@@ -13,11 +16,13 @@
 		<div class="logo"><a href="#"><img src="assets/img/logo.png" alt="/"></a>
 		</div>
 			<div class="top-menu">
-				<nav class="header-menu">
+				<nav class="header-menu transition">
 					<li>
-						<ul class="burger-menu">
-							
-						</ul>
+						<div class="icon nav-icon-5">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 					</li>
 					<li><a href="">О нас</a></li>
 					<li><a href="">Корпоративным клиентам</a></li>
@@ -28,15 +33,17 @@
 					<li><a href="#contact">Контакты</a></li>
 				</nav>
 				<form action="">
-					<input  name="search"  class="top-search">
+					<input  name="search"  class="top-search" placeholder="Искать...">
 				</form>
-				<div class="geo">
-					<i></i>
-					<span>Республика<br>Казахстан</span>
-				</div>
-				<button class="language">
-					РУС
-				</button>	
+				<div class="country transition">
+					<div class="geo">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						<span>Республика<br>Казахстан</span>
+					</div>
+					<button class="language transition">
+						РУС
+					</button>	
+				</div>	
 				<div class="user-login right">
 					<a href=""><img src="assets/img/login.png" alt=""></a>
 				</div>
@@ -66,7 +73,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -82,7 +89,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -98,7 +105,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -114,7 +121,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -130,7 +137,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -146,7 +153,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -162,7 +169,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -178,7 +185,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -194,7 +201,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -210,7 +217,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -226,7 +233,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -242,7 +249,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -273,7 +280,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -289,7 +296,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -305,7 +312,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -321,7 +328,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -337,7 +344,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -353,7 +360,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -369,7 +376,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -385,7 +392,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -401,7 +408,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -417,7 +424,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -433,7 +440,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -449,7 +456,7 @@
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
-							<a href="" class="in-cart">Быстрый просмотр</a>
+							<a href="" class="fast-look">Быстрый просмотр</a>
 						</div>
 						<div class="item-buy">
 							<p class="item-price">1350 р</p>
@@ -518,31 +525,37 @@
 			<h3 class="new-header">Новости компании и отрасли</h3>
 			<ul class="news">
 				<li>
-					<div class="news-img">
-						<img src="assets/img/news-img.jpg" alt="">
-					</div>
-					<div class="news-text">
-						<h6 class="new-header"><span class="red">Новинка!</span>Пилюли со зверятами</h6>
-						<p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой...</p>
-					</div>
+					<a href="">
+						<div class="news-img">
+							<img src="assets/img/news-img.jpg" alt="">
+						</div>
+						<div class="news-text">
+							<h6 class="new-header"><span class="red">Новинка!</span>Пилюли со зверятами</h6>
+							<p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой...</p>
+						</div>
+					</a>	
 				</li>
 				<li>
-					<div class="news-img">
-						<img src="assets/img/news-img.jpg" alt="">
-					</div>
-					<div class="news-text">
-						<h6 class="new-header"><span class="red">Новинка!</span>Пилюли со зверятами</h6>
-						<p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой...</p>
-					</div>
+					<a href="">
+						<div class="news-img">
+							<img src="assets/img/news-img.jpg" alt="">
+						</div>
+						<div class="news-text">
+							<h6 class="new-header"><span class="red">Новинка!</span>Пилюли со зверятами</h6>
+							<p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой...</p>
+						</div>
+					</a>	
 				</li>
 				<li>
-					<div class="news-img">
-						<img src="assets/img/hui.jpg" alt="">
-					</div>
-					<div class="news-text">
-						<h6 class="new-header"><span class="red">Новинка!</span>Пилюли со зверятами</h6>
-						<p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой...</p>
-					</div>
+					<a href="">
+						<div class="news-img">
+							<img src="assets/img/hui.jpg" alt="">
+						</div>
+						<div class="news-text">
+							<h6 class="new-header"><span class="red">Новинка!</span>Пилюли со зверятами</h6>
+							<p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой...</p>
+						</div>
+					</a>	
 				</li>
 			</ul>
 		</div>
@@ -585,5 +598,11 @@
 			</ul>
 		</div>
 	</footer>
+	<script>
+        $(function() {
+     		
+        });
+    </script>
+	<script src="main.js"></script>
 </body>
 </html>
