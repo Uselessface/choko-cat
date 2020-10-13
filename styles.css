@@ -113,7 +113,7 @@ header{
 	border: 1px solid #7b8f9b;
 	border-radius: 40px;
 	background: url(assets/img/search-bg.png) 330px 15px no-repeat;
-	padding: 15px 0 15px 50px;
+	padding: 15px 0 15px 40px;
 }
 .top-search:focus{
 	opacity: 1;
@@ -332,8 +332,6 @@ header{
 	display: block;
 	width: 100%;
 	height: 100%;
-	transition-duration: 4s;
-
 }
 .fast-look{
 	position: absolute;
@@ -346,12 +344,13 @@ header{
 	border-radius: 30px;
 	opacity: 0.9;
 	padding: 0 25px;
-	display: none;
+	opacity: 0;
 	z-index: 888;
 	text-decoration: none;
 }
 .item-img:hover > .fast-look{
-	display: inline-block;
+	transition-duration: 0.5s;
+	opacity: 1;
 }
 .item-buy{
 	padding-top: 50px;
@@ -367,7 +366,7 @@ header{
   	padding: 10px 0 10px;
   	overflow: hidden;
 }
-.breadcrums li {
+.breadcrums>li {
   display: inline-block;
   font-size: 18px;
 }
@@ -376,11 +375,11 @@ header{
   color: #808c97;
   content: "/\00a0";
 }
-.breadcrums li a {
+.breadcrums li>a {
 	color: #808c97;
     text-decoration: none;
 }
-.breadcrums li a:hover {
+.breadcrums li>a:hover {
 	transition-duration: 0.4s;
 	color: #000000;
   	text-decoration: underline;
@@ -388,7 +387,8 @@ header{
 .item-btn{
 	margin: 30px 25% 0;
 	padding: 0 35px;
-	display: none;
+	opacity: 0;
+	display: inline-block;
 	text-decoration: none;
 	vertical-align: middle;
 	text-transform: uppercase;
@@ -400,7 +400,8 @@ header{
 	border-radius: 10px;
 }
 .new-item:hover .item-btn{
-	display: inline-block;
+	transition-duration: 0.5s;
+	opacity: 1;
 }
 /*---------------------------------------------------------*/
 .banner{
@@ -469,6 +470,7 @@ header{
 	transition-duration: 0.5s;
 }
 .news li:hover  .new-header{
+	transition-duration: 0.5s;
 	color: #000000;
 }
 .news-text .new-header{
@@ -509,7 +511,7 @@ header{
 .social li > a{
 	width: 33px;
 	height: 33px;
-	display: inline-block;
+	display: block;
 }
 .bg-whatsup {
     width: 33px; height: 33px;
@@ -537,7 +539,6 @@ footer .wrapper{
 	padding: 20px 0;
 	background: #f0eef4;
 	height: 60px;
-	padding: 
 }
 .copyright{
 	font-size: 20px;
@@ -737,7 +738,18 @@ footer .wrapper{
 	max-width: 1380px;
 	margin: 0 auto;
 	}
-  /*---------------ВЕРХ----------------*/	
+  /*---------------ВЕРХ----------------*/
+
+.nav-icon-5{
+  width: 34px;
+  height: 30px;
+  top: 20px;
+}  	
+.nav-icon-5 span:nth-child(2){
+  top:8px;
+  left: 0px;
+  opacity:1;
+}
 .top-nav .wrapper{
 	padding-top: 10px;
 	margin-bottom: 15px;
@@ -753,7 +765,7 @@ footer .wrapper{
 	margin: 10px 0 0;
 	}	
 .header-menu > li{
-	margin: 0 0 0 10px;
+	margin: 0 0 0 6px;
 	}	
 .header-menu > li > a > img{
 	width: 76px;
@@ -761,18 +773,18 @@ footer .wrapper{
 	top: 7px;
 	}	
 .top-search {
-	font-size: 18px;
+	font-size: 15px;
+	font-weight: 400;
 	width: 210px;
 	height: 30px;
 	background: url(assets/img/search-bg.png) 180px  no-repeat;
 	background-size: 13px;
 	margin: 0;
+	padding: 15px 0 15px 20px;
 	}
 .geo  i {
-	display: inline-block;
-	background: url(assets/img/geo.png) top center no-repeat;
-	width: 20px;
-	height: 25px;
+	vertical-align: 5px;
+	font-size: 20px;
 	}
 .geo span{
 	text-align: center;
@@ -780,7 +792,6 @@ footer .wrapper{
 	margin: 0 10px;
 	font-size: 12px;
 	font-weight: 700;
-	color: #7b8f9b;
 	}	
 .language{
 	font-size: 10px;
@@ -796,7 +807,7 @@ footer .wrapper{
 	max-width:50%;
 	}
 .button{
-	border-radius: 15px;
+	border-radius: 10px;
 	padding: 0 23px;
 	font-size: 15px;
 	line-height: 30px;
@@ -859,7 +870,55 @@ footer .wrapper{
 	padding: 0 20px;
 	font-size: 8px;
 	line-height: 20px;
+	border-radius: 5px;
 	}
 /*---------------------------------------------------------*/
+.news > li {
+	margin-right: 20px;
+}
+.news-img{
+	height: 210px;
+}
+.news-text .new-header{
+	color: #4f4f4f;
+	font-size: 20px;
+	margin: 10px 0;
+}
+.news-text p{
+	max-height: 110px;
+	font-size: 15px;
+	line-height: 26px;
+	color: #808e99;
+}
+.social li{
+ transform: scale(0.6);
+ margin: 0px;
+} 
 
+.bottom .header-menu > li {
+    margin: 0 30px 0 0;
+}
+.bottom .header-menu {
+    margin: 0 0 0 100px;
+}
+footer .wrapper{
+	height: 40px;
+}
+.copyright{
+	font-size: 15px;
+	color: #808c97;
+	font-family: 'LifehackBasic';
+}
+.contacts{
+	margin-left: 25%;
+}
+.contacts li{
+	display: inline-block;
+	font-size: 15px;
+	color: #808e99;
+	font-weight: 300;
+}
+.contacts li:nth-child(even){
+	margin: 0 30px;
+}
 }
