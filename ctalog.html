@@ -14,11 +14,13 @@
 		<div class="logo"><a href="#"><img src="assets/img/logo.png" alt="/"></a>
 		</div>
 			<div class="top-menu">
-				<nav class="header-menu">
+				<nav class="header-menu transition">
 					<li>
-						<ul class="burger-menu">
-							
-						</ul>
+						<div class="icon nav-icon-5">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 					</li>
 					<li><a href="">О нас</a></li>
 					<li><a href="">Корпоративным клиентам</a></li>
@@ -29,15 +31,17 @@
 					<li><a href="#contact">Контакты</a></li>
 				</nav>
 				<form action="">
-					<input  name="search"  class="top-search">
+					<input  name="search"  class="top-search" placeholder="Искать...">
 				</form>
-				<div class="geo">
-					<i></i>
-					<span>Республика<br>Казахстан</span>
-				</div>
-				<button class="language">
-					РУС
-				</button>	
+				<div class="country transition">
+					<div class="geo">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						<span>Республика<br>Казахстан</span>
+					</div>
+					<button class="language transition">
+						РУС
+					</button>	
+				</div>	
 				<div class="user-login right">
 					<a href=""><img src="assets/img/login.png" alt=""></a>
 				</div>
@@ -72,7 +76,7 @@
 	<section class="new-catalog">
 		<div class="wrapper ">
 			<div class="side-button">оставить заявку</div>	
-			<h2 class="new-header">Подарки на каждый день</h2>
+			<h2 class="new-header"><a href= "">Подарки на каждый день</a></h2>
 				<ul class="new-items clearfix">
 					<li class="new-item">
 						<div class="item-img">
@@ -171,7 +175,7 @@
 						</div>
 					</li>
 				</ul>
-				<h2 class="new-header">Чувства и эмоции</h2>
+				<h2 class="new-header"><a href= "">Чувства и эмоции</a></h2>
 				<ul class="new-items clearfix">
 					<li class="new-item">
 						<div class="item-img">
@@ -270,7 +274,7 @@
 						</div>
 					</li>
 				</ul>
-				<h2 class="new-header">С днем рождения</h2>
+				<h2 class="new-header"><a href= "">С днем рождения</a></h2>
 				<ul class="new-items clearfix">
 					<li class="new-item">
 						<div class="item-img">
@@ -369,8 +373,8 @@
 						</div>
 					</li>
 				</ul>
-				<h2 class="new-header">8 марта</h2>
-				<ul class="new-items clearfix">
+				<h2 class="new-header"><a href= "">8 марта</h2>
+				<ul c/lass="new-items clearfix">
 					<li class="new-item">
 						<div class="item-img">
 							<img src="assets/img/choko.jpg" alt="image">
@@ -508,5 +512,11 @@
 			</ul>
 		</div>
 	</footer>	
+		<script>
+        (function() {
+     		
+        });
+    </script>
+	<script src="main.js"></script>
 </body>
 </html>
