@@ -61,7 +61,6 @@ header{
 
 }
 /*-------------------------------------------------------*/
-
 /*------------------------------------ВЕРХНЕЕ МЕНЮ---------*/
 .top-nav .wrapper {
 	margin-bottom: 30px;
@@ -258,7 +257,6 @@ header{
 	overflow: auto;
 	cursor: pointer;
 	border-radius: 0 0 15px 15px;
-	box-shadow:(16px 16px 10px black);
 	background: #f83730;
 	background: rgb(217,26,36);
 	background: linear-gradient(90deg, rgba(217,26,36,1) 20%, rgba(253,1,26,1) 36%, rgba(253,1,26,1) 54%, rgba(222,18,28,1) 65%);
@@ -366,7 +364,7 @@ header{
 }
 .breadcrums {
 	white-space: nowrap;
-  	padding: 10px 0 10px;
+  	padding: 0px;
   	overflow: hidden;
 }
 .breadcrums>li {
@@ -410,9 +408,10 @@ header{
 .banner{
 	margin: 30px 0;
 	overflow: hidden;
-	border-radius: 30px;
+	border-radius: 20px;
 	width: 100%;
-	max-height: 330px;
+	max-height: 300px;
+	background: grey;
 }
 /*------ ОТЗЫВЫ -----------*/
 .rev-item{
@@ -444,7 +443,6 @@ header{
 	margin-bottom: 40px;
 }
 /*---------------------------------------*/
-
 /*---------------НОВОСТИ------------------*/
 .news{
 	display: flex;
@@ -568,9 +566,7 @@ footer .wrapper{
 .contacts li:nth-child(even){
 	margin: 0 60px;
 }
-
 /*------------------------------------------------------*/
-
 /*-------------------------КАТАЛОГ-----------------*/
 .breadcrumbs .wrapper{
 	margin: 30px auto;
@@ -594,9 +590,7 @@ footer .wrapper{
 	font-family: "Lifehack Sans";
 }
 /*----------------------------------------------------------*/
-
 /*----------------------КАРТОЧКА ТОВАРА-------------------------*/
-
 .unit{
 	margin-bottom: 30px;
 	display: flex;
@@ -623,7 +617,6 @@ footer .wrapper{
 	white-space: nowrap;
   	padding: 10px 0 10px;
   	overflow: hidden;
-
 }
 .unit-info > .breadcrums li {
   	display: inline-block;
@@ -719,7 +712,6 @@ footer .wrapper{
 .sum div{
 	margin: 25px 0 0 0;
 }
-
 .unit-info .item-btn{
 	display: inline-block;
 	margin: 20px 0 0 0;
@@ -728,15 +720,37 @@ footer .wrapper{
 	line-height: 57px;
 	border-radius: 25px;
 }
-
+/*--------------------------НОВОСТИ-------------------------------*/
+.general-news .new-header{
+	margin: 0px;
+}
+.topic{
+	width: 100%;
+	height: 333px;
+	border-top: 1px solid #f1f1f1;
+	padding-top: 10px;
+	overflow: hidden;
+	margin: 0 0 50px;
+}
+.topic > img{
+	width: 28%;
+	height: 100%;
+	display: inline-block;
+	background: grey;
+}
+.topic-text{
+	margin-left: 30px;
+	width: 70%;
+	display: inline-block;
+}
+.topic-text p{
+	font-size: 25px;
+	color: rgb(128, 142, 153);
+}
+.topic-text p:nth-of-type(1){
+	margin: 15px 0 25px;
+}
 /*----------------------МЕДИА ЗАПРОСЫ--------------------*/
-@media screen and (max-width: 1620px) {
-	.template{
-		width: 520px;
-	}
-}	
-
-
 @media screen and (max-width: 2050px) {
 	section, footer, header{
 		max-width: 1980px;
@@ -744,7 +758,7 @@ footer .wrapper{
 		}
 	.wrapper{
 		padding: 0 30px;
-		max-width: 1800px;
+		max-width: 1900px;
 		margin: 0 auto;
 		}
 	  /*---------------ВЕРХ----------------*/
@@ -838,7 +852,7 @@ footer .wrapper{
 		margin-left: -115px;
 		font-size: 15px;
 		line-height: 30px;
-		border-radius: 0 0 15px 15px;
+		border-radius: 0 0 10px 10px;
 		box-shadow:(16px 16px 10px black);
 		}
 	/*--------------------------------------------*/
@@ -997,16 +1011,24 @@ footer .wrapper{
 		line-height: 37px;
 		border-radius: 10px;
 	}
+	/*------------------------------------НОВОСТИ---------------------*/
+	.topic{
+	height: 250px;
+	margin: 0 0 40px;
+	}
+	.topic-text p{
+		  font-size: 20px;
+	}
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1700px) {
 	section, footer, header{
 		max-width: 1400px;
 		margin: 0 auto;
 		}
 	.wrapper{
 		padding: 0 30px;
-		max-width: 1380px;
+		max-width: 1390px;
 		margin: 0 auto;
 		}
 	  /*---------------ВЕРХ----------------*/
@@ -1100,7 +1122,7 @@ footer .wrapper{
 		margin-left: -115px;
 		font-size: 15px;
 		line-height: 30px;
-		border-radius: 0 0 15px 15px;
+		border-radius: 0 0 10px 10px;
 		box-shadow:(16px 16px 10px black);
 		}
 	/*--------------------------------------------*/
@@ -1131,7 +1153,7 @@ footer .wrapper{
 		font-size: 20px;
 		}
 	.breadcrums li {
-	  font-size: 9px;
+	  font-size: 12px;
 		}
 	.breadcrums li+li:before {
 	  padding: 1px;
@@ -1192,7 +1214,7 @@ footer .wrapper{
 	}
 	/*----------------------------ПЛАШКИ-------------------------*/
 	.template{
-		width: 410px;
+		width: 420px;
 		height: 260px;
 		padding-top: 75px;
 		border-radius: 40px;
@@ -1277,5 +1299,16 @@ footer .wrapper{
 		line-height: 37px;
 		border-radius: 10px;
 	}
+	/*-------------------------------------------------НОВОСТИ------------------*/
+	.topic{
+		height: 200px;
+		margin: 0 0 30px;
+		}
+	.topic-text{
+		margin-left: 20px;
+	}
 
+	.topic-text p{
+		 font-size: 14px;
+	}
 }
