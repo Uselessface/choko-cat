@@ -45,7 +45,8 @@ body{
 	font-family: 'SegoeUI' , Open Sans, sans-serif;
 	width: 100%;
 	min-width: 320px;
-	margin: 0 auto
+	margin: 0 auto;
+	overflow-x: hidden;
 }
 section, footer, header{
 	max-width: 2512px;
@@ -58,7 +59,13 @@ header{
 	padding: 0 10px;
 	max-width: 2336px;
 	margin: 0 auto;
-
+}
+.container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
 }
 /*-------------------------------------------------------*/
 /*------------------------------------ВЕРХНЕЕ МЕНЮ---------*/
@@ -250,8 +257,7 @@ header{
 	color: #ffffff;
 	font-weight: bold;
 	transform: rotate(-90deg);
-	text-transform: uppercase;
-	background:#e81020;
+	text-transform: uppercase;	background:#e81020;
 	text-align: center;
 	z-index: 999;
 	overflow: auto;
@@ -290,8 +296,7 @@ header{
 	text-align: center;
 	line-height: 45px;
 	color: #010101;
-	text-transform: uppercase;
-	font-weight: 900;
+	text-transform: uppercase;	font-weight: 900;
 	text-decoration: none;
 	margin: 25px 0 0 0;
 }
@@ -302,13 +307,18 @@ header{
 }
 /*------------------------------------------------------*/
 /*---------------- СПИСОК ТОВАРОВ ----------------------*/
+.new-items{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
 .new-item{
+	flex: 0 1 15%;
 	padding: 30px 10px 10px;
 	overflow: hidden;
 	height: 520px;
-	max-width: 360px;
-	float: left;
-	margin: 0 25px 10px 0; 	
 	border: 1px solid transparent;
 	border-radius: 30px;
 }
@@ -354,6 +364,9 @@ header{
 	opacity: 1;
 }
 .item-buy{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	padding-top: 50px;
 }
 .item-price{
@@ -366,6 +379,7 @@ header{
 	white-space: nowrap;
   	padding: 0px;
   	overflow: hidden;
+  	margin-bottom: 15px;
 }
 .breadcrums>li {
   display: inline-block;
@@ -386,15 +400,14 @@ header{
   	text-decoration: underline;
 }
 .item-btn{
-	margin: 30px 25% 0;
-	padding: 0 35px;
+	align-self: center;
+	margin-top: 30px 0;
 	opacity: 0;
-	display: inline-block;
+	padding: 10px;
+	text-align: center;
 	text-decoration: none;
-	vertical-align: middle;
-	text-transform: uppercase;
+	text-transform: uppercase;	
 	font-size: 18px;
-	line-height: 48px;
 	color: #fefefe;
 	font-weight: bold;
 	background: #ff0018;
@@ -411,7 +424,6 @@ header{
 	border-radius: 20px;
 	width: 100%;
 	max-height: 300px;
-	background: grey;
 }
 /*------ ОТЗЫВЫ -----------*/
 .rev-item{
@@ -447,10 +459,11 @@ header{
 .news{
 	display: flex;
 	align-content: center;
-	justify-content: space-between;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .news > li {
-	margin-right: 30px;
+	flex: 0 1 31%;
 }
 .news > li > a{
 	text-decoration: none;
@@ -540,6 +553,8 @@ footer .wrapper{
 	padding: 20px 0;
 	background: #f0eef4;
 	height: 60px;
+	display: flex;
+
 }
 .copyright{
 	font-size: 20px;
@@ -588,6 +603,7 @@ footer .wrapper{
 	font-size: 120px;
 	color: #fffefe;
 	font-family: "Lifehack Sans";
+	flex: 33%;
 }
 /*----------------------------------------------------------*/
 /*----------------------КАРТОЧКА ТОВАРА-------------------------*/
@@ -636,8 +652,7 @@ footer .wrapper{
 }
 .unit-button{
 	padding: 10px 30px;
-	text-transform: uppercase;
-	font-size: 30px;
+	text-transform: uppercase;	font-size: 30px;
 	color: #000000;
 	text-decoration: none;
 	background: #f0eef4;
@@ -659,8 +674,7 @@ footer .wrapper{
 	color: #000000;
 }
 .parameters > span:nth-child(1) {
-	text-transform: uppercase;
-	padding: 10px;
+	text-transform: uppercase;	padding: 10px;
 	margin: 0 30px 5px 0;
 	display: inline-block;
 	background: #f0eef4;
@@ -676,8 +690,7 @@ footer .wrapper{
 }
 .unit-quantity p{
 	font-size: 26px;
-	text-transform: uppercase;
-}
+	text-transform: uppercase;}
 .unit-quantity{
 	margin: 30px 0 0 0;
 	padding: 20px 5px 30px;
@@ -732,11 +745,16 @@ footer .wrapper{
 	overflow: hidden;
 	margin: 0 0 50px;
 }
-.topic > img{
+.topic-img{
+	overflow: hidden;
 	width: 28%;
-	height: 100%;
-	display: inline-block;
-	background: grey;
+	border-radius: 20px;
+}
+.topic-img  img{
+}
+.topic-img:hover > img{
+	transform: scale(1.1);
+	transition-duration: 0.5s;
 }
 .topic-text{
 	margin-left: 30px;
@@ -860,7 +878,6 @@ footer .wrapper{
 	.new-item{
 		padding: 10px 10px 0 5px;
 		height: 310px;
-		max-width: 250px;
 		margin: 0 20px 10px 0; 	
 		border-radius: 15px;
 		}
@@ -889,15 +906,15 @@ footer .wrapper{
 	  padding: 1px;
 		}
 	.item-btn{
-		margin: 0 32% 0;
 		padding: 0 20px;
-		font-size: 8px;
+		font-size: 15px; 
 		line-height: 20px;
 		border-radius: 5px;
 		}
 	/*---------------------------------------------------------*/
 	.news > li {
 		margin-right: 20px;
+		max-width: 530px;
 	}
 	.news-img{
 		height: 255px;
@@ -915,6 +932,7 @@ footer .wrapper{
 	}
 	.social li{
 		transform: scale(0.9);
+
 		margin: 7px;
 	} 
 
@@ -1130,7 +1148,6 @@ footer .wrapper{
 	.new-item{
 		padding: 10px 10px 0 5px;
 		height: 260px;
-		max-width: 195px;
 		margin: 0 15px 5px 0; 	
 		border-radius: 15px;
 		}
@@ -1159,7 +1176,6 @@ footer .wrapper{
 	  padding: 1px;
 		}
 	.item-btn{
-		margin: 0 26% 0;
 		padding: 0 20px;
 		font-size: 8px;
 		line-height: 20px;
@@ -1185,6 +1201,7 @@ footer .wrapper{
 	}
 	.social li{
 		transform: scale(0.6);
+
 		margin: 0px;
 	} 
 

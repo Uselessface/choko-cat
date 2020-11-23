@@ -1,0 +1,564 @@
+@media screen and (max-width: 2050px) {
+	section, footer, header{
+		max-width: 1980px;
+		margin: 0 auto;
+		}
+	.wrapper{
+		padding: 0 30px;
+		max-width: 1900px;
+		margin: 0 auto;
+		}
+	  /*---------------ВЕРХ----------------*/
+
+	.nav-icon-5{
+	  width: 34px;
+	  height: 30px;
+	  top: 20px;
+	}  	
+	.nav-icon-5 span:nth-child(2){
+	  top:9px;
+	  left: 0px;
+	  opacity:1;
+	}
+	.top-nav .wrapper{
+		padding-top: 10px;
+		margin-bottom: 15px;
+	}
+	.header-menu > li > a{
+		font-size: 15px;
+		line-height: 25px;	
+		}	
+	.logo img{
+		height: 70px;
+		}	
+	.top-menu{
+		margin: 10px 0 0;
+		}	
+	.header-menu > li{
+		margin: 0 0 0 15px;
+		}	
+	.header-menu > li > a > img{
+		width: 100px;
+		position: relative;
+		top: 7px;
+		}	
+	.top-search {
+		font-size: 20px;
+		font-weight: 600;
+		width: 270px;
+		height: 40px;
+		background: url(assets/img/search-bg.png) 235px  no-repeat;
+		background-size: 13px;
+		margin: 0;
+		padding: 15px 0 15px 20px;
+		}
+	.geo  i {
+		vertical-align: 5px;
+		font-size: 23px;
+		}
+	.geo span{
+		text-align: center;
+		display: inline-block;
+		margin: 0 15px;
+		font-size: 14px;
+		font-weight: 700;
+		}	
+	.language{
+		font-size: 12px;
+		}	
+	/*----------------БАННЕР------------------*/
+	.sale-title{
+		font: 80px "Lifehack Sans";
+		}
+	.text-container{
+		padding: 55px 0;
+		font-size: 17px;
+		line-height: 36px;
+		max-width:50%;
+		}
+	.button{
+		border-radius: 10px;
+		padding: 0 23px;
+		font-size: 16px;
+		line-height: 30px;
+		margin: 25px 0 0 0;
+		}	
+	.image-container{
+		margin: 20px 0 0 0;
+		max-width:43%;
+		display: inline-block;
+		}
+	/*----------------------------------------*/
+	/*------------------БОКОВАЯ КНОПКА---------*/	
+	.side-button{
+		-webkit-box-shadow:2px 5px 20px 2px #7b8f9b;
+		-moz-box-shadow:2px 5px 20px 2px #7b8f9b;
+		box-shadow:2px 5px 20px 2px #7b8f9b;
+		top: 300px;
+		padding: 0 30px;
+		margin-left: -115px;
+		font-size: 15px;
+		line-height: 30px;
+		border-radius: 0 0 10px 10px;
+		box-shadow:(16px 16px 10px black);
+		}
+	/*--------------------------------------------*/
+	/*---------------- СПИСОК ТОВАРОВ ----------------------*/
+	.new-item{
+		padding: 10px 10px 0 5px;
+		height: 310px;
+		max-width: 250px;
+		margin: 0 20px 10px 0; 	
+		border-radius: 15px;
+		}
+	.new-header {
+		margin: 15px 0 30px;
+		font-size: 28px;
+		}
+	.fast-look{
+		position: absolute;
+		margin: -90px 0 10px 40px;
+		font-size: 10px;
+		line-height: 25px;
+		padding: 0 25px;
+		}
+	.item-buy{
+		padding-top: 10px;
+		}
+	.item-price{
+		line-height: 22px;
+		font-size: 20px;
+		}
+	.breadcrums li {
+	  font-size: 12px;
+		}
+	.breadcrums li+li:before {
+	  padding: 1px;
+		}
+	.item-btn{
+		margin: 0 32% 0;
+		padding: 0 20px;
+		font-size: 8px;
+		line-height: 20px;
+		border-radius: 5px;
+		}
+	/*---------------------------------------------------------*/
+	.news > li {
+		margin-right: 20px;
+		max-width: 530px;
+	}
+	.news-img{
+		height: 255px;
+	}
+	.news-text .new-header{
+		color: #4f4f4f;
+		font-size: 23px;
+		margin: 10px 0;
+	}
+	.news-text p{
+		max-height: 110px;
+		font-size: 18px;
+		line-height: 26px;
+		color: #808e99;
+	}
+	.social li{
+		transform: scale(0.9);
+
+		margin: 7px;
+	} 
+
+	.bottom .header-menu > li {
+	    margin: 0 30px 0 0;
+	}
+	.bottom .header-menu {
+	    margin: 0 0 0 100px;
+	}
+	/*----------------------------ПЛАШКИ-------------------------*/
+	.template{
+		width: 525px;
+		height: 300px;
+		padding-top: 90px;
+		border-radius: 40px;
+		font-size: 90px;
+	}
+	/*----------------------КАРТОЧКА ТОВАРА-------------------------*/
+	.unit-article{
+		font-size: 20px;
+		line-height: 47px;
+		border-radius: 20px;
+		padding: 0 15px;
+	}
+	.unit-prev{
+		margin: 20px;
+		width: 800px;
+		height: 625px;
+	}
+	.unit-info > .breadcrums li {
+		font-size: 26px;
+	}
+	.unit-button{
+		padding: 10px 20px;
+		font-size: 20px;
+		border-radius: 15px;
+		margin: 10px 0;
+	}
+	.description{
+		min-width: 600px;
+		margin: 10px 0 15px 0;
+		padding: 15px 5px 15px; 
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.parameters {
+		font-size: 17px;
+	}
+	.parameters > span:nth-child(1) {
+		padding: 10px;
+		margin: 0 30px 5px 0;
+		width: 30%;
+	}
+	.parameters > span:nth-child(2) {
+		max-width: 63%;
+	}
+	.unit-quantity p{
+		font-size: 15px;
+	}
+	.unit-quantity{
+		margin: 30px 0 0 0;
+		padding: 20px 5px 30px;
+		font-size: 25px;
+	}
+	.quantity{
+		width: 200px;
+		margin: 10px 100px 0 0;
+	}
+	.quantity > div{
+		width: 20%;
+	}
+	.quantity > div:nth-child(1){
+		border-radius: 10px 0 0 10px;
+	}
+	.quantity > div:nth-child(3){
+		border-radius: 0 10px 10px 0;
+	}
+	.quantity > span{
+		float: left;
+		width: 40%;
+		background:  #f0eef4;
+		text-align: center;
+	}
+	.sum div{
+		margin:15px 0 0 0;
+	}
+
+	.unit-info .item-btn{
+		opacity: 1;
+		display: inline-block;
+		margin: 25px 0 0 0;
+		padding: 0 30px;
+		font-size: 22px;
+		line-height: 37px;
+		border-radius: 10px;
+	}
+	/*------------------------------------НОВОСТИ---------------------*/
+	.topic{
+	height: 250px;
+	margin: 0 0 40px;
+	}
+	.topic-text p{
+		  font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 1700px) {
+	section, footer, header{
+		max-width: 1400px;
+		margin: 0 auto;
+		}
+	.wrapper{
+		padding: 0 30px;
+		max-width: 1390px;
+		margin: 0 auto;
+		}
+	  /*---------------ВЕРХ----------------*/
+
+	.nav-icon-5{
+	  width: 34px;
+	  height: 30px;
+	  top: 20px;
+	}  	
+	.nav-icon-5 span:nth-child(2){
+	  top:9px;
+	  left: 0px;
+	  opacity:1;
+	}
+	.top-nav .wrapper{
+		padding-top: 10px;
+		margin-bottom: 15px;
+	}
+	.header-menu > li > a{
+		font-size: 11px;
+		line-height: 15px;	
+		}	
+	.logo img{
+		height: 70px;
+		}	
+	.top-menu{
+		margin: 10px 0 0;
+		}	
+	.header-menu > li{
+		margin: 0 0 0 6px;
+		}	
+	.header-menu > li > a > img{
+		width: 76px;
+		position: relative;
+		top: 7px;
+		}	
+	.top-search {
+		font-size: 15px;
+		font-weight: 400;
+		width: 210px;
+		height: 30px;
+		background: url(assets/img/search-bg.png) 180px  no-repeat;
+		background-size: 13px;
+		margin: 0;
+		padding: 15px 0 15px 20px;
+		}
+	.geo  i {
+		vertical-align: 5px;
+		font-size: 20px;
+		}
+	.geo span{
+		text-align: center;
+		display: inline-block;
+		margin: 0 10px;
+		font-size: 12px;
+		font-weight: 700;
+		}	
+	.language{
+		font-size: 10px;
+		}	
+	/*----------------БАННЕР------------------*/
+	.sale-title{
+		font: 70px "Lifehack Sans";
+		}
+	.text-container{
+		padding: 55px 0;
+		font-size: 15px;
+		line-height: 36px;
+		max-width:50%;
+		}
+	.button{
+		border-radius: 10px;
+		padding: 0 23px;
+		font-size: 15px;
+		line-height: 30px;
+		margin: 25px 0 0 0;
+		}	
+	.image-container{
+		margin: 20px 0 0 0;
+		max-width:40%;
+		display: inline-block;
+		}
+	/*----------------------------------------*/
+	/*------------------БОКОВАЯ КНОПКА---------*/	
+	.side-button{
+		-webkit-box-shadow:2px 5px 20px 2px #7b8f9b;
+		-moz-box-shadow:2px 5px 20px 2px #7b8f9b;
+		box-shadow:2px 5px 20px 2px #7b8f9b;
+		top: 300px;
+		padding: 0 30px;
+		margin-left: -115px;
+		font-size: 15px;
+		line-height: 30px;
+		border-radius: 0 0 10px 10px;
+		box-shadow:(16px 16px 10px black);
+		}
+	/*--------------------------------------------*/
+	/*---------------- СПИСОК ТОВАРОВ ----------------------*/
+	.new-item{
+		padding: 10px 10px 0 5px;
+		height: 260px;
+		max-width: 195px;
+		margin: 0 15px 5px 0; 	
+		border-radius: 15px;
+		}
+	.new-header {
+		margin: 15px 0 30px;
+		font-size: 28px;
+		}
+	.fast-look{
+		position: absolute;
+		margin: -70px 0 10px 20px;
+		font-size: 10px;
+		line-height: 25px;
+		padding: 0 25px;
+		}
+	.item-buy{
+		padding-top: 10px;
+		}
+	.item-price{
+		line-height: 22px;
+		font-size: 20px;
+		}
+	.breadcrums li {
+	  font-size: 12px;
+		}
+	.breadcrums li+li:before {
+	  padding: 1px;
+		}
+	.item-btn{
+		margin: 0 26% 0;
+		padding: 0 20px;
+		font-size: 8px;
+		line-height: 20px;
+		border-radius: 5px;
+		}
+	/*---------------------------------------------------------*/
+	.news > li {
+		margin-right: 20px;
+	}
+	.news-img{
+		height: 210px;
+	}
+	.news-text .new-header{
+		color: #4f4f4f;
+		font-size: 20px;
+		margin: 10px 0;
+	}
+	.news-text p{
+		max-height: 110px;
+		font-size: 15px;
+		line-height: 26px;
+		color: #808e99;
+	}
+	.social li{
+		transform: scale(0.6);
+
+		margin: 0px;
+	} 
+
+	.bottom .header-menu > li {
+	    margin: 0 30px 0 0;
+	}
+	.bottom .header-menu {
+	    margin: 0 0 0 100px;
+	}
+	footer .wrapper{
+		height: 40px;
+	}
+	.copyright{
+		font-size: 15px;
+	}
+	.contacts{
+		margin-left: 25%;
+	}
+	.contacts li{
+		font-size: 15px;
+	}
+	.contacts li:nth-child(even){
+		margin: 0 30px;
+	}
+	.breadcrumbs .wrapper{
+		margin: 10px auto;
+	}
+	/*----------------------------ПЛАШКИ-------------------------*/
+	.template{
+		width: 420px;
+		height: 260px;
+		padding-top: 75px;
+		border-radius: 40px;
+		font-size: 90px;
+	}
+	/*----------------------КАРТОЧКА ТОВАРА-------------------------*/
+	.unit-article{
+		font-size: 20px;
+		line-height: 47px;
+		border-radius: 20px;
+		padding: 0 15px;
+	}
+	.unit-prev{
+		margin: 20px;
+		width: 600px;
+		height: 525px;
+	}
+	.unit-info > .breadcrums li {
+		font-size: 26px;
+	}
+	.unit-button{
+		padding: 10px 20px;
+		font-size: 20px;
+		border-radius: 15px;
+		margin: 10px 0;
+	}
+	.description{
+		min-width: 600px;
+		margin: 10px 0 15px 0;
+		padding: 15px 5px 15px; 
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.parameters {
+		font-size: 17px;
+	}
+	.parameters > span:nth-child(1) {
+		padding: 10px;
+		margin: 0 30px 5px 0;
+		width: 30%;
+	}
+	.parameters > span:nth-child(2) {
+		max-width: 63%;
+	}
+	.unit-quantity p{
+		font-size: 15px;
+	}
+	.unit-quantity{
+		margin: 30px 0 0 0;
+		padding: 20px 5px 30px;
+		font-size: 25px;
+	}
+	.quantity{
+		width: 200px;
+		margin: 15px 100px 0 0;
+	}
+	.quantity > div{
+		width: 20%;
+	}
+	.quantity > div:nth-child(1){
+		border-radius: 10px 0 0 10px;
+	}
+	.quantity > div:nth-child(3){
+		border-radius: 0 10px 10px 0;
+	}
+	.quantity > span{
+		float: left;
+		width: 40%;
+		background:  #f0eef4;
+		text-align: center;
+	}
+	.sum div{
+		margin: 25px 0 0 0;
+	}
+
+	.unit-info .item-btn{
+		opacity: 1;
+		display: inline-block;
+		margin: 20px 0 0 0;
+		padding: 0 30px;
+		font-size: 18px;
+		line-height: 37px;
+		border-radius: 10px;
+	}
+	/*-------------------------------------------------НОВОСТИ------------------*/
+	.topic{
+		height: 200px;
+		margin: 0 0 30px;
+		}
+	.topic-text{
+		margin-left: 20px;
+	}
+
+	.topic-text p{
+		 font-size: 14px;
+	}
+}
