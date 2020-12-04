@@ -63,6 +63,21 @@ header{
 	max-width: 2336px;
 	margin: 0 auto;
 }
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
 /*-------------------------------------------------------*/
 /*------------------------------------ВЕРХНЕЕ МЕНЮ---------*/
 
@@ -113,21 +128,9 @@ header .wrapper {
 	opacity: 1;
 	background: transparent;
 }
-.top-search:focus::-webkit-input-placeholder {
-  	color: transparent
-}
-.top-search:focus::-moz-placeholder {
-  	color: transparent
-}
-.top-search:focus:-moz-placeholder {
-  color: transparent
-}
-.top-search:focus:-ms-input-placeholder {
-  color: transparent
-}
 .top-search:hover{
 	transition-duration: 0.5s;
-	cursor: pointer;
+	cursor: default;
   	opacity: 0.6;
 }
 .country{	
@@ -774,9 +777,8 @@ footer .header-menu > li{
 	margin-bottom: 50px;
 	font-weight: 600;
 }
-.registration__form button{
+.reg_button{
 	display: block;
-	margin: 0 auto 10px;
 	width: 260px;
   	height: 40px;
   	font-size: 25px;
@@ -791,12 +793,13 @@ footer .header-menu > li{
 	color: #ffffff;
 	background-color: #fe0000;
 	border: none;
-	margin-top:30px;
+	margin: 30px auto 10px;
 }
 .sign__up{
 	color: #fe0000;
 	border-color: #fe0000;
 	background: #ffffff;
+	margin: 0 auto;
 }
 .reg__input{
 	display: block;
@@ -810,6 +813,14 @@ footer .header-menu > li{
 	margin-top: 25px;
 	color: #7b8f9b;
 	font-size: 20px;
+}
+.registration_mail .registration_conf{
+	color: #000000;
+	text-align: center;
+}
+
+.registration_mail .registration_container{
+	max-width: 100%;
 }
 
 
