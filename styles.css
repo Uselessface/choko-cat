@@ -38,6 +38,9 @@ scroll-behavior: smooth;
 	display: block;
 	clear: both;
 }
+.noline{
+	text-decoration: none;
+}
 .red{
 	color: #ff0000;
 }
@@ -65,13 +68,13 @@ header{
 
 header .wrapper {
 	justify-content: space-around;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	display: flex;
 	height: 100%;
 	align-items: center;
 }
 .header-menu{
-	margin: -20px 0 0 0;
+	margin: -35px 0 0 0;
 }
 .header-menu > li{
 	display: inline-block;
@@ -300,7 +303,7 @@ header .wrapper {
 }
 
 .new-item{
-	flex: 0 1 15%;
+	flex: 0 1 16%;
 	padding: 30px 10px 10px;
 	overflow: hidden;
 	height: 520px;
@@ -444,11 +447,11 @@ header .wrapper {
 .news{
 	display: flex;
 	align-content: center;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 .news > li {
-	flex: 0 1 31%;
+	flex: 0 1 32%;
 }
 .news > li > a{
 	text-decoration: none;
@@ -484,19 +487,27 @@ header .wrapper {
 	color: #808e99;
 }
 /*---------------------------------------------*/
-.bottom .wrapper {
+footer .wrapper {
+	display: flex;
+	height: 100%;
+	margin: 60px auto 0;
+	flex-direction: column;
+}
+footer .header-menu{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-self: center;
+	height: 75%;
+}	
+footer .header-menu > li{
+	align-self: center;
+	flex: 0 1 20%;
+}
+.contain{
 	display: flex;
 	justify-content: space-between;
-	height: 100%;
-	margin: 60px auto 20px;
-}
-.bottom .header-menu{
-	margin-left: 200px;
-}
-.bottom .header-menu > li{
-	display: inline-block;
-  	width: 20%;
-  	margin: 0 60px 0 0;
+	flex-wrap: wrap;
 }
 /*--------------------------СОЦСЕТИ------------------*/
 .social{
@@ -534,12 +545,11 @@ header .wrapper {
 }
 /*---------------------------------------------------------*/
 /*-----------------------------------------------ФУТЕР---------------*/
-footer .wrapper{
+.bottom{
 	padding: 20px 0;
 	background: #f0eef4;
 	height: 60px;
 	display: flex;
-
 }
 .copyright{
 	font-size: 20px;
@@ -576,19 +586,19 @@ footer .wrapper{
 	display: flex;
 	justify-content: space-between;
 	height: 100%;
+	flex-wrap: wrap;
 }
 .template{
+	flex: 0 1 32%;
 	overflow: hidden;
-	padding-top: 100px;
-	width: 740px;
+	text-align: center;
+	vertical-align: middle;
 	height: 345px;
 	background: #808792;
 	border-radius: 40px;
-	text-align: center;
 	font-size: 120px;
 	color: #fffefe;
 	font-family: "Lifehack Sans";
-	flex: 33%;
 }
 /*----------------------------------------------------------*/
 /*----------------------КАРТОЧКА ТОВАРА-------------------------*/
@@ -753,6 +763,87 @@ footer .wrapper{
 .topic-text p:nth-of-type(1){
 	margin: 15px 0 25px;
 }
+/*--------------------------------РЕГИСТРАЦИЯ И ЛИЧНЫЙ КАБИНЕТ------------------------------------*/
+.registration_container{
+	text-align: center;
+	margin: 20% auto;
+	max-width: 550px;
+}
+.registration_header{
+	font-size: 40px;
+	margin-bottom: 50px;
+	font-weight: 600;
+}
+.registration__form button{
+	display: block;
+	margin: 0 auto 10px;
+	width: 260px;
+  	height: 40px;
+  	font-size: 25px;
+  	text-transform: uppercase;
+  	padding: 5px 0 0;
+ 	border-radius: 15px;
+}
+.registration__form button:hover{
+	cursor: pointer;
+}
+.sign__in{
+	color: #ffffff;
+	background-color: #fe0000;
+	border: none;
+	margin-top:30px;
+}
+.sign__up{
+	color: #fe0000;
+	border-color: #fe0000;
+	background: #ffffff;
+}
+.reg__input{
+	display: block;
+	margin: 0 auto 10px;
+	width: 100%;
+	padding: 10px 20px;
+	font-size: 18px;
+	border: solid 2px #f0eef4;
+}
+.registration_conf{
+	margin-top: 25px;
+	color: #7b8f9b;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------МЕДИА ЗАПРОСЫ--------------------*/
 @media screen and (max-width: 2050px) {
 	section, footer, header{
@@ -861,8 +952,9 @@ footer .wrapper{
 	/*--------------------------------------------*/
 	/*---------------- СПИСОК ТОВАРОВ ----------------------*/
 	.new-item{
+		flex: 0 1 15%;
 		padding: 10px 10px 0 5px;
-		height: 310px;
+		height: 350px;
 		margin: 0 20px 10px 0; 	
 		border-radius: 15px;
 		}
@@ -896,11 +988,11 @@ footer .wrapper{
 		line-height: 20px;
 		border-radius: 5px;
 		}
+
+	footer .header-menu > li{
+		flex: 0 1 23%;
+}
 	/*---------------------------------------------------------*/
-	.news > li {
-		margin-right: 20px;
-		max-width: 530px;
-	}
 	.news-img{
 		height: 255px;
 	}
@@ -917,7 +1009,6 @@ footer .wrapper{
 	}
 	.social li{
 		transform: scale(0.9);
-
 		margin: 7px;
 	} 
 
@@ -1167,9 +1258,6 @@ footer .wrapper{
 		border-radius: 5px;
 		}
 	/*---------------------------------------------------------*/
-	.news > li {
-		margin-right: 20px;
-	}
 	.news-img{
 		height: 210px;
 	}
@@ -1186,7 +1274,6 @@ footer .wrapper{
 	}
 	.social li{
 		transform: scale(0.6);
-
 		margin: 0px;
 	} 
 
@@ -1195,9 +1282,6 @@ footer .wrapper{
 	}
 	.bottom .header-menu {
 	    margin: 0 0 0 100px;
-	}
-	footer .wrapper{
-		height: 40px;
 	}
 	.copyright{
 		font-size: 15px;
